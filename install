@@ -2,6 +2,7 @@
 
 STOW_DIRS=(
     git
+    idea
     zsh
 )
 TARGET_DIR=~

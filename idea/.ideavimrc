@@ -1,0 +1,32 @@
+let mapleader = " "
+
+xnoremap <leader>p \"_dP
+xnoremap <leader>d \"_d
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+set scrolloff=8
+set incsearch
+set ideajoin
+
+nmap <leader>ff <Action>(GotoFile)
+nmap <leader>fg <Action>(FindInPath)
+nmap <leader>fa <Action>(GotoAction)
+
+nmap <leader>pt <Action>(ActivateTerminalToolWindow)
+nmap <leader>pe <Action>(ActivateProjectToolWindow)
+
+nmap <leader>ca <Action>(ShowIntentionActions)
+
+nmap gh <Action>(ShowHoverInfo)
+nmap grn <Action>(RenameElement)
+"nmap gd <Action>(GotoDeclaration)
+"nmap gy <Action>(GotoTypeDeclaration)
+"nmap gI <Action>(GotoImplementation)
+
+
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+
+
