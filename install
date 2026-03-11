@@ -1,0 +1,8 @@
+#!/usr/bin/env zsh
+
+STOW_DIRS=()
+TARGET_DIR=~
+
+for dir in $STOW_DIRS; do
+    stow -v -R -t $TARGET_DIR $dir
+done
