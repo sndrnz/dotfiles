@@ -1,6 +1,8 @@
 #!/usr/bin/env zsh
 
-STOW_DIRS=()
+STOW_DIRS=(
+    git
+)
 TARGET_DIR=~
 
 for dir in $STOW_DIRS; do

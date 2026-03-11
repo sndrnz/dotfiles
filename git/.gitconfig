@@ -1,0 +1,7 @@
+[user]
+	email = sandro.darnuzer@gmail.com
+	name = Sandro Darnuzer
+
+[includeIf "gitdir:~/Developer/Projects/soul.media/**"]
+	path = ~/Developer/Projects/soul.media/.gitconfig
+
