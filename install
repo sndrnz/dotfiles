@@ -8,19 +8,17 @@ STOW_DIRS=(
 )
 TARGET_DIR=~
 
-stow_dir() {
+install_dir() {
     dir=$1
-    stow -v -R -t $TARGET_DIR $dir
+    echo "Install '$dir'"
+    stow -R -t $TARGET_DIR $dir
 }
 
 dir=$1
-echo "Dir is '$dir'"
 if [ -n "$dir" ]; then
-    stow_dir $dir 
+    install_dir $dir 
 else
     for dir in $STOW_DIRS; do
-	stow_dir $dir
+	install_dir $dir
     done
 fi
-
-
