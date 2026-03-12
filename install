@@ -7,6 +7,19 @@ STOW_DIRS=(
 )
 TARGET_DIR=~
 
-for dir in $STOW_DIRS; do
+stow_dir() {
+    dir=$1
     stow -v -R -t $TARGET_DIR $dir
-done
+}
+
+dir=$1
+echo "Dir is '$dir'"
+if [ -n "$dir" ]; then
+    stow_dir $dir 
+else
+    for dir in $STOW_DIRS; do
+	stow_dir $dir
+    done
+fi
+
+
