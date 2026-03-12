@@ -1,0 +1,56 @@
+shell-integration-features = sudo,ssh-terminfo,ssh-env
+
+font-family = "Lilex Nerd Font Mono"
+font-thicken = true
+font-size = 18
+
+theme = catppuccin-mocha.conf
+# background-opacity = 0.9
+# background-blur = 0
+adjust-cell-height = 20%
+
+# shell-integration-features = no-cursor
+# cursor-style = block
+
+window-padding-x = 16
+window-padding-y = 0,8
+window-padding-color = extend
+window-decoration = auto
+window-title-font-family = "Lilex Nerd Font Mono"
+# title = " "
+
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+macos-option-as-alt = false
+macos-icon = official
+resize-overlay = never
+
+notify-on-command-finish = never
+notify-on-command-finish-action = no-bell,no-notify
+bell-features = no-system,no-audio,no-attention,no-title,no-border
+
+quick-terminal-position = center
+
+
+# Unbind default keybindings for switching tabs
+keybind = super+1=unbind
+keybind = super+digit_1=unbind
+keybind = super+2=unbind
+keybind = super+digit_2=unbind
+keybind = super+3=unbind
+keybind = super+digit_3=unbind
+keybind = super+4=unbind
+keybind = super+digit_4=unbind
+keybind = super+5=unbind
+keybind = super+digit_5=unbind
+keybind = super+6=unbind
+keybind = super+digit_6=unbind
+keybind = super+7=unbind
+keybind = super+digit_7=unbind
+keybind = super+8=unbind
+keybind = super+digit_8=unbind
+keybind = super+9=unbind
+keybind = super+digit_9=unbind
+keybind = global:shift+ctrl+alt+super+g=toggle_quick_terminal
+
+keybind = super+,=text:EDITOR=nvim ghostty +edit-config\n
