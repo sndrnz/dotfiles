@@ -29,6 +29,10 @@ nmap grn <Action>(RenameElement)
 "nmap gy <Action>(GotoTypeDeclaration)
 "nmap gI <Action>(GotoImplementation)
 
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
