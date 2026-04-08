@@ -3,6 +3,7 @@
 export EDITOR=nvim
 
 # ====================== Alias =====================
+alias reload="source \"$HOME/.zshrc\""
 
 # DDEV
 alias php="ddev php"
