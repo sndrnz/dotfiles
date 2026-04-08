@@ -23,11 +23,8 @@ nmap <leader>ef <Action>(SelectInProjectView)
 
 nmap <leader>ca <Action>(ShowIntentionActions)
 
-nmap gh <Action>(ShowHoverInfo)
+nmap <leader>d <Action>(ShowErrorDescription)
 nmap grn <Action>(RenameElement)
-"nmap gd <Action>(GotoDeclaration)
-"nmap gy <Action>(GotoTypeDeclaration)
-"nmap gI <Action>(GotoImplementation)
 
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
