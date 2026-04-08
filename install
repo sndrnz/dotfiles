@@ -4,6 +4,7 @@ STOW_DIRS=(
     git
     ghostty
     idea
+    lazygit
     oh-my-posh
     tmux
     zsh
