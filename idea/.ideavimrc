@@ -9,6 +9,7 @@ xnoremap <leader>d \"_d
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 
+nnoremap gp `[v`]
 
 nmap <leader>ff <Action>(GotoFile)
 nmap <leader>fg <Action>(FindInPath)
