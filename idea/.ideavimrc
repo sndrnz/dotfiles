@@ -14,6 +14,10 @@ nmap <leader>ff <Action>(GotoFile)
 nmap <leader>fg <Action>(FindInPath)
 nmap <leader>fa <Action>(GotoAction)
 
+nmap <leader>sv <Action>(SplitVertically)
+nmap <leader>sh <Action>(SplitHorizontally)
+nmap <leader>sx <Action>(CloseContent)
+
 nmap <leader>ee <Action>(ActivateProjectToolWindow)
 nmap <leader>ef <Action>(SelectInProjectView)
 
