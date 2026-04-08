@@ -73,6 +73,42 @@ export PATH="/Users/sndrnz/.composer/vendor/bin:$PATH"
 
 source ~/.oh-my-posh/init
 
+# ==================== VI Mode ====================
 
+bindkey -v
+bindkey "^H" backward-delete-char
+bindkey "^?" backward-delete-char
 
+export KEYTIMEOUT=1
 
+function zle-keymap-select {
+  if [[ ${KEYMAP} == vicmd ]] ||
+     [[ $1 = 'block' ]]; then
+    echo -ne '\e[1 q'
+  elif [[ ${KEYMAP} == main ]] ||
+       [[ ${KEYMAP} == viins ]] ||
+       [[ ${KEYMAP} = '' ]] ||
+       [[ $1 = 'beam' ]]; then
+    echo -ne '\e[5 q'
+  fi
+}
+zle -N zle-keymap-select
+zle-line-init() {
+    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+    echo -ne "\e[5 q"
+}
+zle -N zle-line-init
+echo -ne '\e[5 q' # Use beam shape cursor on startup.
+preexec() { echo -ne '\e[5 q' ;} 
+
+# ==================== FZF ====================
+
+export FZF_DEFAULT_OPTS=" \
+--tmux \
+--preview \"bat --color=always --style=numbers --line-range=:500 {}\" \
+--color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
+--color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
+--color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
+--color=selected-bg:#45475A \
+--color=border:#6C7086,label:#CDD6F4"
+source <(fzf --zsh)
