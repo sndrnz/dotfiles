@@ -7,6 +7,8 @@ alias reload="source \"$HOME/.zshrc\""
 
 alias lazygit="lazygit --use-config-dir=$HOME/.config/lazygit"
 
+alias oc=opencode
+
 # DDEV
 alias php="ddev php"
 alias composer="ddev composer"
