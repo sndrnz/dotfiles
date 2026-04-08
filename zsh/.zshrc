@@ -5,6 +5,8 @@ export EDITOR=nvim
 # ====================== Alias =====================
 alias reload="source \"$HOME/.zshrc\""
 
+alias lazygit="lazygit --use-config-dir=$HOME/.config/lazygit"
+
 # DDEV
 alias php="ddev php"
 alias composer="ddev composer"
