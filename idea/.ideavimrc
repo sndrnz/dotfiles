@@ -14,8 +14,8 @@ nmap <leader>ff <Action>(GotoFile)
 nmap <leader>fg <Action>(FindInPath)
 nmap <leader>fa <Action>(GotoAction)
 
-nmap <leader>pt <Action>(ActivateTerminalToolWindow)
-nmap <leader>pe <Action>(ActivateProjectToolWindow)
+nmap <leader>ee <Action>(ActivateProjectToolWindow)
+nmap <leader>ef <Action>(SelectInProjectView)
 
 nmap <leader>ca <Action>(ShowIntentionActions)
 
