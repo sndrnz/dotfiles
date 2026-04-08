@@ -9,11 +9,6 @@ alias lazygit="lazygit --use-config-dir=$HOME/.config/lazygit"
 
 alias oc=opencode
 
-# DDEV
-alias php="ddev php"
-alias composer="ddev composer"
-alias drush="ddev drush"
-
 compare() {
   fileA=$1
   fileB=$2
