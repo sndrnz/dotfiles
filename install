@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 STOW_DIRS=(
+    aerospace
     bat
     git
     ghostty
