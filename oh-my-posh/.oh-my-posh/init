@@ -1,0 +1,23 @@
+#!/usr/bin/env zsh
+
+load_omp() {
+  theme=$1
+  eval "$(oh-my-posh init zsh --config $HOME/.oh-my-posh/themes/$theme)"
+}
+
+if [ "$TERM_PROGRAM" = "ghostty" ]; then
+  load_omp ghostty.omp.json
+fi
+
+if [ "$TERM_PROGRAM" = "tmux" ]; then
+  load_omp tmux.omp.json
+  # set -o vi
+fi
+
+if [ "$TERM_PROGRAM" = "zed" ]; then
+  load_omp zed.omp.json
+fi
+
+if [ "$TERMINAL_EMULATOR" = "JetBrains-JediTerm" ]; then
+  load_omp jetbrains.omp.json
+fi

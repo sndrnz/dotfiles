@@ -71,39 +71,8 @@ export PATH="/Users/sndrnz/.bun/bin:$PATH"
 
 export PATH="/Users/sndrnz/.composer/vendor/bin:$PATH"
 
-# =================== Oh My Posh ===================
+source ~/.oh-my-posh/init
 
-load_omp() {
-  theme=$1
-  eval "$(oh-my-posh init zsh --config $HOME/.oh-my-posh/themes/$theme)"
-}
 
-# ==================================================
-# ==================== Terminals ===================
-# ==================================================
 
-# ===================== Ghostty ====================
 
-if [ "$TERM_PROGRAM" = "ghostty" ]; then
-  load_omp sndrnz_ghostty.omp.json
-  set -o vi
-fi
-
-# ===================== TMUX ====================
-
-if [ "$TERM_PROGRAM" = "tmux" ]; then
-  load_omp sndrnz_ghostty.omp.json
-  set -o vi
-fi
-
-# ======================= Zed ======================
-
-if [ "$TERM_PROGRAM" = "zed" ]; then
-  load_omp sndrnz_zed.omp.json
-fi
-
-# ==================== JetBrains ===================
-
-if [ "$TERMINAL_EMULATOR" = "JetBrains-JediTerm" ]; then
-  load_omp sndrnz_jetbrains.omp.json
-fi
