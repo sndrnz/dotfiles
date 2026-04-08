@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 STOW_DIRS=(
+    bat
     git
     ghostty
     idea
