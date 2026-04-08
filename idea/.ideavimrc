@@ -32,6 +32,10 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
+nmap <leader>mp <Action>(ReformatCode)
+xmap <leader>mp <Action>(ReformatCode)
+
+
 Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
