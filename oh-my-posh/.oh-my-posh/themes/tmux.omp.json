@@ -59,15 +59,6 @@
           }
         },
         {
-          "type": "project",
-          "style": "plain",
-          "foreground": "p:project",
-          "foreground_templates": [
-            "{{ if .Type  }}p:project:{{ .Type }}{{ end }}"
-          ],
-          "template": "{{ if .Type }} <p:seperator>{{ .Var.Seperator }}</> (\uf487 {{ .Type }}){{ end }}"
-        },
-        {
           "type": "git",
           "style": "plain",
           "foreground": "p:git",
