@@ -15,6 +15,9 @@ nmap <leader>ff <Action>(GotoFile)
 nmap <leader>fg <Action>(FindInPath)
 nmap <leader>fa <Action>(GotoAction)
 
+nmap <C-w>q <Action>(CloseContent)
+nmap <C-w>m <Action>(MaximizeEditorInSplit)
+
 nmap <leader>ee <Action>(ActivateProjectToolWindow)
 nmap <leader>ef <Action>(SelectInProjectView)
 
