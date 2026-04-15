@@ -41,7 +41,7 @@ return {
         },
       },
       filters = {
-        custom = { ".DS_Store", ".git", "__pycache__" },
+        custom = { ".DS_Store", "^.git$", "__pycache__" },
       },
       git = {
         ignore = false,
