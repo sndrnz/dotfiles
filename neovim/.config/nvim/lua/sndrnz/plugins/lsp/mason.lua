@@ -2,6 +2,7 @@ return {
   "mason-org/mason-lspconfig.nvim",
   opts = {
     ensure_installed = {
+      "astro",
       "cssls",
       "emmet_language_server",
       "html",
