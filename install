@@ -9,6 +9,7 @@ STOW_DIRS=(
     lazygit
     neovim
     oh-my-posh
+    opencode
     tmux
     zsh
 )
