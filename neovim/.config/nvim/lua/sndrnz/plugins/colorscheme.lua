@@ -3,6 +3,14 @@ return {
   name = "catppuccin",
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme "catppuccin-mocha"
-  end
+    require("catppuccin").setup({
+      integrations = {
+        copilot_vim = true,
+        mason = true,
+        nvim_surround = true,
+      },
+    })
+
+    vim.cmd.colorscheme("catppuccin-mocha")
+  end,
 }
