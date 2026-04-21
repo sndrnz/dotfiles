@@ -6,6 +6,7 @@ return {
     local treesitter = require("nvim-treesitter")
 
     treesitter.install({
+      "astro",
       "json",
       "javascript",
       "typescript",
