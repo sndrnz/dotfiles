@@ -90,3 +90,20 @@ vim.lsp.config("phpactor", {
     },
   },
 })
+
+vim.lsp.config("emmet_language_server", {
+  filetypes = {
+    "css",
+    "eruby",
+    "html",
+    "htmlangular",
+    "htmldjango",
+    "javascriptreact",
+    "less",
+    "sass",
+    "scss",
+    "svelte",
+    "typescriptreact",
+    "vue",
+  },
+})

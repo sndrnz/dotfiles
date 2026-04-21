@@ -38,20 +38,21 @@ return {
       },
       sources = {
         default = { "lsp", "path", "snippets", "buffer" },
-        -- providers = {
-        --   lsp = {
-        --     score_offset = 4,
-        --   },
-        --   snippets = {
-        --     score_offset = 3,
-        --   },
-        --   path = {
-        --     score_offset = 2,
-        --   },
-        --   buffer = {
-        --     score_offset = 1,
-        --   },
-        -- },
+        providers = {
+          snippets = {
+            opts = {
+              filter_snippets = function(ft, file)
+                if string.match(file, "friendly.snippets") then
+                  if string.match(file, "html") then
+                    return false
+                  end
+                end
+
+                return true
+              end,
+            },
+          },
+        },
       },
       fuzzy = { implementation = "prefer_rust_with_warning" },
     },
