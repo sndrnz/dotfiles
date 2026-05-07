@@ -4,7 +4,7 @@ font-family = "Lilex Nerd Font Mono"
 font-thicken = true
 font-size = 18
 
-theme = catppuccin-mocha.conf
+theme = Catppuccin Mocha
 # background-opacity = 0.9
 # background-blur = 0
 adjust-cell-height = 20%
