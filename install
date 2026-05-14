@@ -12,6 +12,7 @@ STOW_DIRS=(
     oh-my-posh
     opencode
     sketchybar
+    sketchyvim
     tmux
     zsh
 )
