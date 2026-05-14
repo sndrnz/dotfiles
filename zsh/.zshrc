@@ -30,7 +30,7 @@ export PATH="$PATH:$HOME/Developer/Scripts/bin"
 # ===================== Zoxide =====================
 
 if command -v zoxide &> /dev/null; then
-  eval "$(zoxide init --cmd cd zsh)"
+  eval "$(zoxide init zsh)"
 fi
 
 # ======================= NVM ======================
