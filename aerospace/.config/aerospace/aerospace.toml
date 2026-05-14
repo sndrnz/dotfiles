@@ -188,3 +188,11 @@ on-mode-changed = []
 [[on-window-detected]]
     if.app-id = 'com.apple.ActivityMonitor'
     run = 'layout floating'
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.FontBook'
+    run = 'layout floating'
+
+[[on-window-detected]]
+    if.window-title-regex-substring = '^Welcome to Vivaldi profiles$'
+    run = 'layout floating'
