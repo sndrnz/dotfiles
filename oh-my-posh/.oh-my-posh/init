@@ -21,3 +21,7 @@ fi
 if [ "$TERMINAL_EMULATOR" = "JetBrains-JediTerm" ]; then
   load_omp jetbrains.omp.json
 fi
+
+if [ "$CODEX_SHELL" = "1" ]; then
+  load_omp codex.omp.json
+fi
