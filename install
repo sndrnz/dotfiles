@@ -6,6 +6,7 @@ STOW_DIRS=(
     git
     ghostty
     idea
+    jankyborders
     lazygit
     neovim
     oh-my-posh
