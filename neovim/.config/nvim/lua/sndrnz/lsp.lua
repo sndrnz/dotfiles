@@ -79,18 +79,6 @@ vim.lsp.config("pyright", {
   },
 })
 
-vim.lsp.config("phpactor", {
-  settings = {
-    init_options = {
-      ["language_server_phpstan.enabled"] = false,
-      ["language_server_psalm.enabled"] = false,
-      ["language_server_php_cs_fixer.enabled"] = false,
-      ["php_code_sniffer.enabled"] = false,
-      ["prophecy.enabled"] = false,
-    },
-  },
-})
-
 vim.lsp.config("emmet_language_server", {
   filetypes = {
     "css",

@@ -11,7 +11,6 @@ return {
       "tailwindcss",
       "ts_ls",
       "pyright",
-      "phpactor",
     },
   },
   dependencies = {
