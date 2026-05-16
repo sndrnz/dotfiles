@@ -4,7 +4,7 @@ options=(
   active_color=0xff89b4fa
   inactive_color=0x00000000
   width=10.0
-  blacklist="phpstorm"
+  blacklist=""
 )
 
 borders "${options[@]}"
