@@ -194,5 +194,9 @@ on-mode-changed = []
     run = 'layout floating'
 
 [[on-window-detected]]
+    if.app-id = 'com.Replacicon.Replacicon'
+    run = 'layout floating'
+
+[[on-window-detected]]
     if.window-title-regex-substring = '^Welcome to Vivaldi profiles$'
     run = 'layout floating'
