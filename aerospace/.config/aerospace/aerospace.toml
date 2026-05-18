@@ -200,3 +200,7 @@ on-mode-changed = []
 [[on-window-detected]]
     if.window-title-regex-substring = '^Welcome to Vivaldi profiles$'
     run = 'layout floating'
+
+[[on-window-detected]]
+    if.window-title-regex-substring = '^DevTools'
+    run = 'layout floating'
