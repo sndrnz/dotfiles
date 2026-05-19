@@ -112,3 +112,7 @@ export FZF_DEFAULT_OPTS=" \
 --color=selected-bg:#45475A \
 --color=border:#6C7086,label:#CDD6F4"
 source <(fzf --zsh)
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/sndrnz/.lmstudio/bin"
+# End of LM Studio CLI section
