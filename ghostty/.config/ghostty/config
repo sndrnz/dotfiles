@@ -22,7 +22,7 @@ window-title-font-family = "Lilex Nerd Font Mono"
 macos-titlebar-style = tabs
 macos-titlebar-proxy-icon = hidden
 macos-option-as-alt = false
-macos-icon = official
+macos-icon = custom
 resize-overlay = never
 
 notify-on-command-finish = never
